@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ 0. Writing strings to Redis """
-from redis.client import Redis
 from typing import Union
+import redis
 import uuid
 
 
@@ -10,7 +10,7 @@ class Cache:
     def __init__(self):
         """ constructor - store an instance of the Redis client as a private
         variable named _redis and flush the instance using flushdb """
-        self._redis = Redis()
+        self._redis = redis.Redis()
         self._redis.flushdb()
 
     def store(self, data: Union[str, bytes, int, float]) -> str:
