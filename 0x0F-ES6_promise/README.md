@@ -1,12 +1,12 @@
-# 0x07. Accessibility
+# 0x0F. ES6 Promises
 
-> This directory contains all the tasks of the project "0x0B. Redis basic" at [Holberton School](https://www.holbertonschool.com "Holberton School.") for educational purpose.
+> This directory contains all the tasks of the project "0x0F. ES6 Promises" at [Holberton School](https://www.holbertonschool.com "Holberton School.") for educational purpose.
 
 [![Luis Miguel Vargas](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fluismvargasg1)](https://twitter.com/luismvargasg1)
 
 ## Table of Contents
 
-- [0x07. Accessibility](#0x07-accessibility)
+- [0x0F. ES6 Promises](#0x0f-es6-promises)
   - [Table of Contents](#table-of-contents)
   - [General Objectives](#general-objectives)
   - [Author](#author)
@@ -15,12 +15,8 @@
 
 ## General Objectives
 
-- Promises (how, why, and what).
-- How to use the then, resolve, catch methods.
-- How to use every method of the Promise object.
-- Throw / Try.
-- The await operator.
-- How to use an async function.
+- Learn how to use redis for basic operations
+- Learn how to use redis as a simple cache
 
 ## Author
 
