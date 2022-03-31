@@ -6,6 +6,6 @@ export default class HolbertonClass {
 
   [Symbol.toPrimitive](cast) {
     if (cast === 'string') return this._location;
-    if (cast === 'number') return this._size;
+   return this._size;
   }
 }
