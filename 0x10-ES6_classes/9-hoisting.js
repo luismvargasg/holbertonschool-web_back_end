@@ -1,3 +1,4 @@
+/* eslint-disable */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
@@ -32,7 +33,7 @@ export class StudentHolberton {
   }
 
   get fullStudentDescription() {
-    return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
+    return `${self._firstName} ${self._lastName} - ${self._holbertonClass._year} - ${self._holbertonClass._location}`;
   }
 }
 
