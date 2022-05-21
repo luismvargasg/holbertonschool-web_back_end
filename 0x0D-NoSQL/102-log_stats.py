@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print(f'{status} status check')
 
     print("IPs:")
-    sorted_ips = logs.aggregate(
+    sorted_ips = collection.aggregate(
         [{"$group": {"_id": "$ip", "count": {"$sum": 1}}},
          {"$sort": {"count": -1}}])
     i = 0
