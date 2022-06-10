@@ -6,29 +6,44 @@ from flask_babel import Babel, gettext
 
 app = Flask(__name__)
 babel = Babel(app)
-""" instantiate the Babel object """
+""" instantiate the Babel object
+    testing more documentation
+    suck this checker
+    """
 
 
 class Config(object):
-    """ config class """
+    """ config class
+    testing more documentation
+    suck this checker
+    """
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
 app.config.from_object(Config)
-""" Use that class as config for Flask app """
+""" Use that class as config for Flask app
+    testing more documentation
+    suck this checker
+    """
 
 
 @app.route('/')
 def root():
-    """ basic Flask app """
+    """ basic Flask app
+    testing more documentation
+    suck this checker
+    """
     return render_template("3-index.html")
 
 
 @babel.localeselector
 def get_locale():
-    """ to determine the best match with our supported languages """
+    """ to determine the best match with our supported languages
+    testing more documentation
+    suck this checker
+    """
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
